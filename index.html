@@ -108,3 +108,39 @@ color:#777;
 </select>
 
 <button onclick="bookNow()">Confirm Booking</
+</div>
+
+<footer>
+Jess Nails & Lashes ©️ 2026
+</footer>
+
+<script>
+
+function bookNow(){
+
+let name=document.getElementById("name").value;
+let phone=document.getElementById("phone").value;
+let service=document.getElementById("service").value;
+let date=document.getElementById("date").value;
+let time=document.getElementById("time").value;
+
+let message =
+`Hello Jess 💗
+
+Name: ${name}
+Phone: ${phone}
+Service: ${service}
+Date: ${date}
+Time: ${time}`;
+
+window.open(
+`https://wa.me/201015136510?text=${encodeURIComponent(message)}`,
+'_blank'
+);
+
+}
+
+</script>
+
+</body>
+</html>
